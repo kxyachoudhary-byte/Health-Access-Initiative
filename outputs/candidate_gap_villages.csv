@@ -1,0 +1,86 @@
+village,district,state,village_code,latitude,longitude,nearest_facility_km,candidate_gap,cluster_id
+Almel,Vijayapura,Karnataka,599304,17.09376,76.21928,11.75,True,9
+Ammanakeri,Vijayanagara,Karnataka,605076,14.87467,76.42442,12.536,True,4
+Aralikoppa,Chikkamagaluru,Karnataka,609084,13.56192,75.48273,10.136,True,3
+Atnur,Raichur,Karnataka,600969,16.18373,77.10581,10.622,True,1
+Balakundi,Ballari,Karnataka,604840,15.53173,76.95276,10.813,True,16
+Bendebembli,Yadgir,Karnataka,621214,16.47849,77.16554,13.58,True,30
+Bengeri,Dharwad,Karnataka,602378,15.36964,75.14733,10.97,True,8
+Bhairana Hatti,Gadag,Karnataka,601892,15.76992,75.43883,10.01,True,24
+Bhupa Sandra,Bengaluru Urban,Karnataka,938329,13.04206,77.57925,11.062,True,6
+Bomberahalli,Chitradurga,Karnataka,605358,14.21432,76.78374,10.063,True,13
+Chabbi,Gadag,Karnataka,602103,15.16936,75.59675,11.01,True,15
+Chandrampalli,Kalaburagi,Karnataka,620363,17.52923,77.46363,10.216,True,17
+Chapoli,Belagavi,Karnataka,597817,15.65437,74.33711,13.585,True,10
+Chipgi,Uttara Kannada,Karnataka,603213,14.64554,74.85013,10.729,True,23
+Degaon,Belagavi,Karnataka,597916,15.54336,74.34189,13.148,True,35
+Devachihatti,Belagavi,Karnataka,597820,15.70928,74.33859,10.433,True,10
+Devangaon,Vijayapura,Karnataka,599298,17.16618,76.32949,11.352,True,9
+Dharmapura,Ballari,Karnataka,938318,15.07031,76.53126,10.72,True,14
+Donkamadu,Vijayapura,Karnataka,599647,16.35161,76.30465,10.406,True,7
+Dumma,Shivamogga,Karnataka,607867,13.94952,75.03962,10.555,True,11
+Gokul,Dharwad,Karnataka,602383,15.34919,75.08107,11.044,True,8
+Gollalingammanahalli,Ballari,Karnataka,604974,14.97099,76.6655,11.837,True,39
+Gopankop,Dharwad,Karnataka,602377,15.37462,75.1421,10.997,True,8
+Gubbiga,Shivamogga,Karnataka,607899,13.97105,75.03067,10.502,True,11
+Gubbiga,Shivamogga,Karnataka,607961,13.97105,75.03067,10.502,True,11
+Gubbiga,Shivamogga,Karnataka,608047,13.97105,75.03067,10.502,True,11
+Gudadinni,Vijayapura,Karnataka,599483,16.40685,76.02115,10.434,True,28
+Gudadinni,Vijayapura,Karnataka,599569,16.40685,76.02115,10.434,True,28
+Gunjavati,Uttara Kannada,Karnataka,603010,14.99616,74.9253,10.627,True,32
+Guntagola,Raichur,Karnataka,600451,16.28386,76.51637,11.976,True,31
+Hagaribommanahalli,Vijayanagara,Karnataka,604675,15.04344,76.19888,10.993,True,29
+Halli,Raichur,Karnataka,600981,16.11449,77.06361,11.899,True,1
+Hanumandoddi,Raichur,Karnataka,600741,16.33549,77.39226,11.997,True,37
+Harvi,Raichur,Karnataka,600989,16.076,77.06552,11.599,True,1
+Hebbala,Bengaluru Urban,Karnataka,938336,13.04022,77.5888,10.515,True,6
+Hebbe,Chikkamagaluru,Karnataka,609074,13.53265,75.56774,14.819,True,3
+Heggala,Kodagu,Karnataka,618004,12.14836,75.76146,11.894,True,21
+Hirehalli,Mysuru,Karnataka,618872,12.05784,76.282,11.663,True,5
+Hirehalli,Mysuru,Karnataka,619016,12.05784,76.282,11.663,True,5
+Hirehalli,Mysuru,Karnataka,619113,12.05784,76.282,11.663,True,5
+Holda,Belagavi,Karnataka,597913,15.57687,74.26799,15.051,True,35
+Hosakoppa,Shivamogga,Karnataka,607861,13.9885,75.02568,10.176,True,11
+Jalahalli,Bengaluru Urban,Karnataka,938348,13.04487,77.54897,10.305,True,6
+Jalligeri,Gadag,Karnataka,602098,15.21664,75.65132,13.84,True,15
+Jamboti,Belagavi,Karnataka,597826,15.69037,74.36814,10.266,True,10
+Jamkhandi,Kalaburagi,Karnataka,620834,16.80609,76.70099,11.406,True,19
+Joida,Uttara Kannada,Karnataka,602726,15.17039,74.48473,13.656,True,26
+Kadni,Kalaburagi,Karnataka,620294,17.25626,76.73345,10.013,True,12
+Kakkuppi,Vijayanagara,Karnataka,605081,14.86602,76.44613,11.051,True,4
+Kaldevanhalli,Yadgir,Karnataka,620938,16.43895,76.29487,11.431,True,7
+Kanakgiri,Koppal,Karnataka,601580,15.57006,76.41764,10.651,True,22
+Karkihalli,Koppal,Karnataka,601786,15.2321,76.23498,11.043,True,29
+Kelagote,Davanagere,Karnataka,606397,14.56035,76.29012,10.52,True,25
+Kenchenahalli,Davanagere,Karnataka,606417,14.57144,76.30576,12.105,True,25
+Kere,Chikkamagaluru,Karnataka,608934,13.32866,75.14078,10.567,True,27
+Kodamanhalli,Yadgir,Karnataka,621091,16.76035,76.77006,13.326,True,19
+Kodigehalli,Bengaluru Urban,Karnataka,613093,13.05833,77.57318,10.999,True,6
+Kodigehalli,Bengaluru Urban,Karnataka,938507,13.05833,77.57318,10.999,True,6
+Kurubarahalli,Chitradurga,Karnataka,605872,13.80236,76.3151,10.254,True,18
+Kurubarahalli,Chitradurga,Karnataka,605990,13.80236,76.3151,10.254,True,18
+Kurugodu,Ballari,Karnataka,604870,15.3471,76.83589,10.323,True,16
+Madagiri,Raichur,Karnataka,600982,16.09359,77.07535,12.679,True,1
+Marlahalli,Chitradurga,Karnataka,605209,14.69348,76.73454,10.232,True,34
+Mendil,Belagavi,Karnataka,597915,15.53129,74.3244,15.342,True,35
+Mincheri,Raichur,Karnataka,600417,16.20673,76.49751,11.93,True,31
+Moraba,Vijayanagara,Karnataka,605080,14.85696,76.40427,14.528,True,4
+Murkigudda,Raichur,Karnataka,600956,16.18752,76.96372,10.043,True,1
+Nandigave,Chikkamagaluru,Karnataka,609070,13.59187,75.57255,15.094,True,3
+Penjahalli,Mysuru,Karnataka,618871,12.04659,76.27397,10.462,True,5
+Putpak,Yadgir,Karnataka,621287,16.81054,77.45397,11.077,True,20
+Ramgad,Ballari,Karnataka,604994,15.12647,76.46195,15.136,True,14
+Salotgi,Vijayapura,Karnataka,599266,17.13215,76.01927,11.89,True,33
+Sheveguli,Uttara Kannada,Karnataka,603341,14.76024,74.41644,12.55,True,2
+Shivapur,Vijayapura,Karnataka,599719,16.39803,76.29701,10.214,True,7
+Singanhalli,Yadgir,Karnataka,621084,16.75633,76.74229,11.657,True,19
+Sirwar,Raichur,Karnataka,600967,16.17526,77.02134,12.346,True,1
+Talgadde,Uttara Kannada,Karnataka,603379,14.81511,74.36353,10.507,True,2
+Taranhalli,Kalaburagi,Karnataka,620652,17.15142,76.91164,10.835,True,12
+Teggihalli,Yadgir,Karnataka,620922,16.5797,76.53357,11.367,True,36
+Tekkalakote,Ballari,Karnataka,938324,15.53444,76.87703,11.272,True,16
+Thontapur,Vijayapura,Karnataka,599305,17.11821,76.1748,12.064,True,33
+Torali,Belagavi,Karnataka,597813,15.7127,74.31843,10.514,True,10
+Turvihal,Raichur,Karnataka,601074,15.76178,76.59633,10.684,True,40
+Unkal,Dharwad,Karnataka,602376,15.37729,75.116,11.778,True,8
+Yarnal,Vijayapura,Karnataka,599510,16.61547,75.86258,11.796,True,38

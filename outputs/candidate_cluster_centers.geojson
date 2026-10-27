@@ -1,0 +1,605 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.04922499999999,
+          16.138431666666666
+        ]
+      },
+      "properties": {
+        "cluster_id": 1,
+        "village_count": 6,
+        "mean_distance_km": 11.531
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.389985,
+          14.787675
+        ]
+      },
+      "properties": {
+        "cluster_id": 2,
+        "village_count": 2,
+        "mean_distance_km": 11.529
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.54100666666666,
+          13.562146666666669
+        ]
+      },
+      "properties": {
+        "cluster_id": 3,
+        "village_count": 3,
+        "mean_distance_km": 13.35
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.42493999999999,
+          14.865883333333334
+        ]
+      },
+      "properties": {
+        "cluster_id": 4,
+        "village_count": 3,
+        "mean_distance_km": 12.705
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.27999249999999,
+          12.055027500000001
+        ]
+      },
+      "properties": {
+        "cluster_id": 5,
+        "village_count": 4,
+        "mean_distance_km": 11.363
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.572676,
+          13.048762
+        ]
+      },
+      "properties": {
+        "cluster_id": 6,
+        "village_count": 5,
+        "mean_distance_km": 10.776
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.29884333333332,
+          16.396196666666665
+        ]
+      },
+      "properties": {
+        "cluster_id": 7,
+        "village_count": 3,
+        "mean_distance_km": 10.684
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.121625,
+          15.367685
+        ]
+      },
+      "properties": {
+        "cluster_id": 8,
+        "village_count": 4,
+        "mean_distance_km": 11.197
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.274385,
+          17.12997
+        ]
+      },
+      "properties": {
+        "cluster_id": 9,
+        "village_count": 2,
+        "mean_distance_km": 11.551
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.34056749999999,
+          15.69168
+        ]
+      },
+      "properties": {
+        "cluster_id": 10,
+        "village_count": 4,
+        "mean_distance_km": 11.2
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.031462,
+          13.970234
+        ]
+      },
+      "properties": {
+        "cluster_id": 11,
+        "village_count": 5,
+        "mean_distance_km": 10.447
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.822545,
+          17.20384
+        ]
+      },
+      "properties": {
+        "cluster_id": 12,
+        "village_count": 2,
+        "mean_distance_km": 10.424
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.78374,
+          14.21432
+        ]
+      },
+      "properties": {
+        "cluster_id": 13,
+        "village_count": 1,
+        "mean_distance_km": 10.063
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.496605,
+          15.098389999999998
+        ]
+      },
+      "properties": {
+        "cluster_id": 14,
+        "village_count": 2,
+        "mean_distance_km": 12.928
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.62403499999999,
+          15.193
+        ]
+      },
+      "properties": {
+        "cluster_id": 15,
+        "village_count": 2,
+        "mean_distance_km": 12.425
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.88856,
+          15.471089999999998
+        ]
+      },
+      "properties": {
+        "cluster_id": 16,
+        "village_count": 3,
+        "mean_distance_km": 10.803
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.46363,
+          17.52923
+        ]
+      },
+      "properties": {
+        "cluster_id": 17,
+        "village_count": 1,
+        "mean_distance_km": 10.216
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.3151,
+          13.80236
+        ]
+      },
+      "properties": {
+        "cluster_id": 18,
+        "village_count": 2,
+        "mean_distance_km": 10.254
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.73778,
+          16.774256666666666
+        ]
+      },
+      "properties": {
+        "cluster_id": 19,
+        "village_count": 3,
+        "mean_distance_km": 12.13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.45397,
+          16.81054
+        ]
+      },
+      "properties": {
+        "cluster_id": 20,
+        "village_count": 1,
+        "mean_distance_km": 11.077
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.76146,
+          12.14836
+        ]
+      },
+      "properties": {
+        "cluster_id": 21,
+        "village_count": 1,
+        "mean_distance_km": 11.894
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.41764,
+          15.57006
+        ]
+      },
+      "properties": {
+        "cluster_id": 22,
+        "village_count": 1,
+        "mean_distance_km": 10.651
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.85013,
+          14.64554
+        ]
+      },
+      "properties": {
+        "cluster_id": 23,
+        "village_count": 1,
+        "mean_distance_km": 10.729
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.43883,
+          15.76992
+        ]
+      },
+      "properties": {
+        "cluster_id": 24,
+        "village_count": 1,
+        "mean_distance_km": 10.01
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.29794000000001,
+          14.565895000000001
+        ]
+      },
+      "properties": {
+        "cluster_id": 25,
+        "village_count": 2,
+        "mean_distance_km": 11.312
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.48473,
+          15.17039
+        ]
+      },
+      "properties": {
+        "cluster_id": 26,
+        "village_count": 1,
+        "mean_distance_km": 13.656
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.14078,
+          13.32866
+        ]
+      },
+      "properties": {
+        "cluster_id": 27,
+        "village_count": 1,
+        "mean_distance_km": 10.567
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.02115,
+          16.40685
+        ]
+      },
+      "properties": {
+        "cluster_id": 28,
+        "village_count": 2,
+        "mean_distance_km": 10.434
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.21692999999999,
+          15.13777
+        ]
+      },
+      "properties": {
+        "cluster_id": 29,
+        "village_count": 2,
+        "mean_distance_km": 11.018
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.16554,
+          16.47849
+        ]
+      },
+      "properties": {
+        "cluster_id": 30,
+        "village_count": 1,
+        "mean_distance_km": 13.58
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.50694,
+          16.245295
+        ]
+      },
+      "properties": {
+        "cluster_id": 31,
+        "village_count": 2,
+        "mean_distance_km": 11.953
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.9253,
+          14.99616
+        ]
+      },
+      "properties": {
+        "cluster_id": 32,
+        "village_count": 1,
+        "mean_distance_km": 10.627
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.097035,
+          17.12518
+        ]
+      },
+      "properties": {
+        "cluster_id": 33,
+        "village_count": 2,
+        "mean_distance_km": 11.977
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.73454,
+          14.69348
+        ]
+      },
+      "properties": {
+        "cluster_id": 34,
+        "village_count": 1,
+        "mean_distance_km": 10.232
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.31142666666666,
+          15.550506666666665
+        ]
+      },
+      "properties": {
+        "cluster_id": 35,
+        "village_count": 3,
+        "mean_distance_km": 14.514
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.53357,
+          16.5797
+        ]
+      },
+      "properties": {
+        "cluster_id": 36,
+        "village_count": 1,
+        "mean_distance_km": 11.367
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.39226,
+          16.33549
+        ]
+      },
+      "properties": {
+        "cluster_id": 37,
+        "village_count": 1,
+        "mean_distance_km": 11.997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          75.86258,
+          16.61547
+        ]
+      },
+      "properties": {
+        "cluster_id": 38,
+        "village_count": 1,
+        "mean_distance_km": 11.796
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.6655,
+          14.97099
+        ]
+      },
+      "properties": {
+        "cluster_id": 39,
+        "village_count": 1,
+        "mean_distance_km": 11.837
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.59633,
+          15.76178
+        ]
+      },
+      "properties": {
+        "cluster_id": 40,
+        "village_count": 1,
+        "mean_distance_km": 10.684
+      }
+    }
+  ]
+}

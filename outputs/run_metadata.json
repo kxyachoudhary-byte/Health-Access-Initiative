@@ -1,0 +1,35 @@
+{
+  "run_utc": "2026-10-27T02:46:30.637084+00:00",
+  "geographic_scope": "Karnataka villages with source-matched coordinates; facility lookups include border-adjacent areas",
+  "source_village_rows": 30753,
+  "source_rows_without_coordinates": 25644,
+  "analyzed_village_rows": 5109,
+  "geocoded_village_coverage_fraction": 0.1661,
+  "facility_features_in_vicinity": 24747,
+  "phc_chc_facility_records_analyzed": 4148,
+  "facility_property_fields": [
+    "district",
+    "layer",
+    "name",
+    "place",
+    "source",
+    "source_id",
+    "state",
+    "type",
+    "village_id"
+  ],
+  "straight_line_distance_threshold_km": 10.0,
+  "candidate_gap_villages": 85,
+  "requested_kmeans_groups": 40,
+  "produced_kmeans_groups": 40,
+  "facility_classification": "PHC/CHC only, inferred from source facility type property",
+  "village_source_url": "https://raw.githubusercontent.com/mchittineni/india-village-finder/main/karnataka/data/karnataka_villages.csv",
+  "coordinates_source_url": "https://raw.githubusercontent.com/mchittineni/india-village-finder/main/karnataka/data/coords_master.json",
+  "facility_source_url": "https://github.com/yashveeeeeeer/india-geodata/releases/download/healthcare/facilities/INDIA_HEALTH_FACILITIES_NIC.geojson",
+  "source_sha256": {
+    "villages": "3c165c1b135e1b5ebecea3be764782fa0e3f3c8089d7279e237fe42b67db10cf",
+    "coordinates": "c6a2739baf152e28dc8b9a98090eb1819f91b96fda5f6e41eeb664d8466b05b4",
+    "facilities": "2a9100cfa6ed33c90a3888e40b63400d876106d64ba4ab9148f3c0fd3c616f70"
+  },
+  "limitations": "Not evidence of 40 actual healthcare deserts. Selection bias from missing village coordinates, incompleteness/outdatedness of facility records, straight-line not travel distance; source-level population not available."
+}
