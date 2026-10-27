@@ -1,69 +1,62 @@
-# Health Access Initiative | Rural healthcare access mapping
+# Health Access Initiative
 
-A Python + QGIS workflow for exploring geographic access to primary healthcare in India. It calculates straight-line distance from each village centroid to the nearest healthcare facility, screens for potential geographic access gaps, and groups screened settlements with K-Means for follow-up mapping.
+**Open, reproducible analysis of rural healthcare access in Karnataka, India.**
 
-**Research status:** This repository contains analysis code, source references, and a blank input schema. It does not currently contain validated village-level observations, completed study results, or evidence supporting a finding of 40 rural healthcare deserts. Use the pipeline with independently sourced and checked records before making empirical claims.
+This repository combines a published village directory with independently geocoded village locations and an external public health-facility dataset to screen for geographic gaps in access to primary and community health centres (PHCs/CHCs). It includes Python and QGIS scripts, the selected observed records, derived CSV and GeoJSON outputs, source checksums, an automated regeneration workflow, and an interactive map.
 
-## Method
+## Observed-data screening (26–27 October 2026)
 
-1. Obtain village point data and healthcare-facility point data from appropriately licensed sources. Document version, geographic coverage, and collection date.
-2. Validate coordinates, facility categories, village identifiers, and data completeness.
-3. Calculate nearest-facility great-circle (haversine) distance.
-4. Screen candidate access gaps using a user-specified distance threshold. **A geographic threshold is not a clinical designation or a measure of travel time.**
-5. Apply K-Means to geographically group the candidate settlements. The number of groups is a modeling parameter, **not the number of independently documented healthcare deserts.**
-6. Inspect the CSV and GeoJSON outputs in QGIS and validate candidate gaps against actual road connectivity, facility capacity, and local context.
+| Metric | Result |
+| --- | ---: |
+| Karnataka village directory entries | 30,753 |
+| Villages with matched geocoordinates, analyzed | **5,109 (16.6%)** |
+| PHC/CHC records in Karnataka and border-adjacent vicinity | **4,148** |
+| Villages ≥ 10 km (great-circle distance) from a mapped PHC/CHC | **85** |
+| K-Means planning groups of those candidate villages | **40, chosen as a model parameter** |
 
-## Input data format
+**These are candidate access gaps, not 40 verified rural healthcare deserts.** The sampling coverage is only 16.6% and it is not possible to infer the true state-wide or India-wide number of underserved areas from the result. The 10-km threshold is analyst-selected; geographic straight-line distance is not actual travel time, road access, clinical quality, patient costs, clinic staffing, or facility capacity.
 
-- `data/villages_TEMPLATE.csv`: `village,district,state,latitude,longitude,population` (one settlement per row, WGS84 decimal degrees).
-- `facilities.geojson` (user-supplied): GeoJSON FeatureCollection of point features with a `type` property (e.g., PHC or CHC). Coordinates are **[longitude, latitude]** in EPSG:4326.
+## Explore outputs
 
-The repository does **not** redistribute third-party facility or village data. Refer to [data/SOURCES.md](data/SOURCES.md) for candidate source collections and licensing considerations.
+- [Analysis results](outputs/FINDINGS.md) | [run metadata and source SHA-256 hashes](outputs/run_metadata.json)
+- [Village-level screening results (CSV)](outputs/village_access_all.csv)
+- [85 candidate gap villages (CSV)](outputs/candidate_gap_villages.csv)
+- [40 candidate planning groups (CSV)](outputs/candidate_cluster_summary.csv)
+- [Cluster centers (QGIS-compatible GeoJSON)](outputs/candidate_cluster_centers.geojson)
+- [Selected geocoded villages (CSV)](data/villages_geocoded_karnataka.csv)
+- [Selected PHC/CHC facility positions (CSV)](data/facilities_phc_chc_karnataka_vicinity.csv)
+- [Interactive Leaflet map (HTML)](docs/index.html) — download the file to open it directly in a browser; it can also be hosted using GitHub Pages if configured
+- [Detailed data provenance](data/SOURCES.md)
 
-## Run
+## Reproduce the analysis
 
-Requires Python 3.10+:
+Requires Python 3.10+ and network access to fetch the original source datasets.
 
 ```bash
 python -m pip install -r requirements.txt
-python health_access_clusters.py \
-  --villages data/villages.csv \
-  --facilities data/facilities.geojson \
-  --clusters 40 --threshold-km 10 \
-  --out outputs
-python tests/test_smoke.py
+python run_observed_karnataka.py
 ```
 
-Input filenames above are placeholders. Add your verified CSV and GeoJSON files first. The default PHC/CHC facility-type filter can be overridden with `--facility-types` and `--type-field`.
+The script downloads source files and recomputes the village-to-facility great-circle distances, candidate selection, K-Means group labels, CSVs, GeoJSON, SHA-256 provenance, and interactive map. The GitHub Actions [workflow](.github/workflows/rebuild_real_data.yml) runs this automatically when its code changes or when started manually.
 
-The script writes:
-- `outputs/village_access_all.csv`: all villages, nearest-facility distances and screening flag.
-- `outputs/candidate_gap_villages.csv`: flagged villages and `cluster_id`.
-- `outputs/candidate_cluster_summary.csv`: cluster aggregate statistics.
-- `outputs/candidate_cluster_centers.geojson`: QGIS-readable centroids of clustered candidates.
-- `outputs/run_metadata.json`: analysis parameters, timestamps and input SHA-256 checksums.
+Other scripts:
+- [health_access_clusters.py](health_access_clusters.py): reusable distance screening and K-Means pipeline for independently supplied village CSV and facility GeoJSON.
+- [qgis_native_kmeans.py](qgis_native_kmeans.py): QGIS Desktop Processing equivalent on generated candidate village coordinates.
+- [Smoke test](tests/test_smoke.py): fictional small inputs used only to verify script functionality. Test data are not empirical findings.
 
-For QGIS Desktop native K-Means, run `qgis_native_kmeans.py` from the QGIS Python Console after the preceding command. It runs the QGIS Processing algorithm on an EPSG:6933 projected layer; labels may differ from those produced by scikit-learn.
+## Data sources
 
-## Interpretation and limitations
+1. Village directory and geocoded location matching: [India Village Finder](https://github.com/mchittineni/india-village-finder), government LGD-based directory, with coordinate coverage limitations. Downloads: [Karnataka village CSV](https://github.com/mchittineni/india-village-finder/blob/main/karnataka/data/karnataka_villages.csv) and [coordinate source](https://github.com/mchittineni/india-village-finder/blob/main/karnataka/data/coords_master.json).
+2. PHC/CHC facility coordinates: [India Geodata public healthcare dataset](https://github.com/yashveeeeeeer/india-geodata/blob/main/data/healthcare/facilities/README.md), compiled from NIC HealthGIS; dataset's recorded provenance period is 2023 and its release was published in 2026. [Source release](https://github.com/yashveeeeeeer/india-geodata/releases/tag/healthcare%2Ffacilities).
 
-- `--clusters 40` explicitly requests 40 spatial groups; it does **not** demonstrate 40 observed healthcare deserts.
-- `--threshold-km 10` is an analyst-selected screening assumption, not an official shortage definition.
-- Haversine distance is straight-line distance, not road distance, typical travel duration, affordability, availability, quality of care or facility capacity.
-- Missing or uneven village/facility data can materially bias results. Inspect coverage and source dates.
-- Do not infer clinical need from clustering alone. Any published claim should include the input data, provenance, exact methodology, and independent validation.
-- The included smoke test uses fictional toy coordinates solely to test code behavior.
+Source licenses and attribution requirements are independent of this repository's code license. See [data/SOURCES.md](data/SOURCES.md). Source checksums in [run metadata](outputs/run_metadata.json) help identify exactly which downloaded files were processed.
 
-## Repository structure
+## Important scope limitations
 
-```text
-health_access_clusters.py     Main Python analysis
-qgis_native_kmeans.py         QGIS Desktop Processing variant
-data/villages_TEMPLATE.csv    Blank village schema
-data/SOURCES.md               Candidate source links and provenance checks
-requirements.txt              Python dependencies
-tests/test_smoke.py           Automated self-check with toy records
-LICENSE                       Code license
-```
+- The output is **Karnataka-only**, covering the 5,109 source villages with geocoded points, not all India or all Karnataka villages.
+- Some 2023-era facility records may not reflect current operation, availability, or location accuracy.
+- PHC/CHC records from surrounding areas are included to avoid falsely inflating distances near state borders.
+- The analysis does not use population weights, travel networks, facility capacity, or verified healthcare need.
+- The requested count of **40 K-Means groups** is not a validated count of access-deprived regions. Independent field and official administrative validation would be required before calling an area a healthcare desert.
 
-MIT licensed.
+Code: MIT License. Third-party data: attributed to their respective providers under their applicable licenses.
