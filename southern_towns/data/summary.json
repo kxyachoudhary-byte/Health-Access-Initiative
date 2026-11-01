@@ -1,0 +1,51 @@
+{
+  "town_count": 40,
+  "clinic_count": 3553,
+  "median_nearest_miles": 6.24,
+  "mean_nearest_miles": 7.31,
+  "maximum_nearest_miles": 21.44,
+  "min_nearest_miles": 0.47,
+  "cluster_counts": {
+    "Closer": 12,
+    "Intermediate": 16,
+    "Farther": 12
+  },
+  "selection": [
+    {
+      "state": "AL",
+      "eligible_towns": 277,
+      "census_source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_gaz_place_01.txt"
+    },
+    {
+      "state": "AR",
+      "eligible_towns": 187,
+      "census_source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_gaz_place_05.txt"
+    },
+    {
+      "state": "LA",
+      "eligible_towns": 128,
+      "census_source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_gaz_place_22.txt"
+    },
+    {
+      "state": "MS",
+      "eligible_towns": 167,
+      "census_source": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/2024_gaz_place_28.txt"
+    }
+  ],
+  "method": {
+    "town_selection": "Census 2024 Gazetteer incorporated places with NAME ending in 'town' and FUNCSTAT 'A'; select 10 per state at equal intervals over GEOID-sorted eligible towns. Not a random or need-weighted sample.",
+    "geospatial_measure": "Great-circle (haversine) miles from Census geographic representative point to the nearest and third-nearest HRSA Health Center Service Delivery Sites in the search region.",
+    "cluster": "Custom deterministic Lloyd K-means (k=3), population-standardized nearest and third-nearest distances; centers seeded from sorted feature-score quantiles. Labels ordered by nearest-clinic mean. No medical need inference.",
+    "coverage": "Only HRSA-supported service-delivery sites, not all clinics, hospitals, pharmacies or providers. Distances are not driving distances.",
+    "source_hrsa": "https://gisportal.hrsa.gov/server/rest/services/HealthCareFacilities/HealthCareFacilities/MapServer/18/query",
+    "source_hrsa_query": "https://gisportal.hrsa.gov/server/rest/services/HealthCareFacilities/HealthCareFacilities/MapServer/18/query?where=1%3D1&geometry=-97%2C27%2C-83%2C39&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CSITE_NM%2CSITE_ADDRESS%2CSITE_CITY%2CSITE_STATE_ABBR&returnGeometry=true&outSR=4326&f=json",
+    "source_census": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/",
+    "caveat": "Results are screening indicators and do not validate healthcare shortages, patient-level access, or care-kit distribution. QGIS-compatible GeoJSON output; analysis is performed in JavaScript, not QGIS."
+  },
+  "interpretation": "HRSA-supported service-delivery-site distances only; includes special-purpose and school/mobile sites; not driving distance or aid-kit allocation.",
+  "sources": {
+    "census_gazetteer": "https://www2.census.gov/geo/docs/maps-data/data/gazetteer/2024_Gazetteer/",
+    "hrsa_service_delivery_sites": "https://gisportal.hrsa.gov/server/rest/services/HealthCareFacilities/HealthCareFacilities/MapServer/18/query",
+    "hrsa_query": "https://gisportal.hrsa.gov/server/rest/services/HealthCareFacilities/HealthCareFacilities/MapServer/18/query?where=1%3D1&geometry=-97%2C27%2C-83%2C39&geometryType=esriGeometryEnvelope&inSR=4326&spatialRel=esriSpatialRelIntersects&outFields=OBJECTID%2CSITE_NM%2CSITE_ADDRESS%2CSITE_CITY%2CSITE_STATE_ABBR&returnGeometry=true&outSR=4326&f=json"
+  }
+}
