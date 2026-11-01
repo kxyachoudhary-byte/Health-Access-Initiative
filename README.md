@@ -16,7 +16,7 @@ This is a research and software portfolio. The mapped proximity indicators do no
 
 This repository combines a published village directory with independently geocoded village locations and an external public health-facility dataset to screen for geographic gaps in access to primary and community health centres (PHCs/CHCs). It includes Python and QGIS scripts, the selected observed records, derived CSV and GeoJSON outputs, source checksums, an automated regeneration workflow, and an interactive map.
 
-## Observed-data screening (26–27 October 2026)
+## Karnataka village access screening
 
 | Metric | Result |
 | --- | ---: |
