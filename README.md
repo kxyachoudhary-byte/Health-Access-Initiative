@@ -1,4 +1,16 @@
-# Health Access Initiative
+# Geospatial Healthcare Access: Data & Code
+
+## Featured: Southern Clinic Proximity Explorer
+
+**[Interactive research tool](https://southern-clinic-access.vercel.app/)** · **[Reproducible Python implementation](southern_towns/analyze.py)** · **[40-town dataset](southern_towns/data/town_access.csv)** · **[QGIS-ready GeoJSON](southern_towns/data/town_access.geojson)** · **[Unit tests](southern_towns/tests/test_analysis.py)**
+
+A Python-based geographic-access screening pipeline covering 40 incorporated towns in Alabama, Arkansas, Louisiana, and Mississippi. It computes geodesic distances to HRSA Health Center Service Delivery Sites and applies standardized, deterministic K-means to group towns by nearest and third-nearest facility proximity. The explorer supports interactive distance thresholds, state and text filters, map selection, and data export.
+
+This is a research and software portfolio. The mapped proximity indicators do not represent verified medical shortages or historical aid-kit allocation.
+
+---
+
+## Additional research: rural healthcare access in Karnataka, India
 
 **Open, reproducible analysis of rural healthcare access in Karnataka, India.**
 
